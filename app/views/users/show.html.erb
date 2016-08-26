@@ -14,6 +14,8 @@
 	<% if @user.microposts.count >= 1 %>
 		<strong>First micropost:</strong>
 		<%= @user.microposts.first.content %>
+	<% else %>
+		<strong>No microposts from this user yet.</strong>
 	<% end %>
 </p>
 
